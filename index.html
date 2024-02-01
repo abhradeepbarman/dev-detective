@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <header class="top-container">
+            <h1>DevDetective</h1>
+
+            <div class="mode-tab">
+                <!-- light mode  -->
+                <div class="mode light-mode">
+                    <p>Light</p>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+                <!-- dark mode  -->
+                <div class="mode dark-mode">
+                    <p>Dark</p>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form class="search-container">
+                
+                <div class="inputField">
+                    <i class="fa-solid fa-magnifying-glass magGlass"></i>
+                    <input placeholder="Enter a GitHub username..." data-input required>
+                </div>
+
+                <div class="searchField">
+                    <div>
+                        <i class="fa-solid fa-xmark xMark"></i>
+                        <p class="user-not-found" data-UserNotFound>no search results</p>
+                    </div>
+                    
+                    <button data-searchBtn type="submit" class="btn">Search</button>
+                </div>
+
+            </form>
+
+            <div class="display-profile">
+
+                <!-- profile pic  -->
+                <div class="profile-pic-container">
+                    <img src="" data-profilePic width="120px" height="120px"
+                    class="profilePic">
+                </div>
+                
+
+                <div class="user-details-container">
+
+                    <div class="name-date">
+                        <!-- name  -->
+                        <h2 data-name></h2>
+
+                        <!-- joining date  -->
+                        <p data-joinDate></p>
+                    </div>
+
+                    <!-- username  -->
+                    <a data-username target="_blank"></a>
+                    <!-- bio  -->
+                    <p data-bio></p>
+
+                    <!-- stats  -->
+                    <div class="stats-container">
+                        <div class="stats repos">
+                            <p class="stats-name">Repos</p>
+                            <p data-repos class="stat-num"></p>
+                        </div>
+
+                        <div class="stats followers">
+                            <p class="stats-name">Followers</p>
+                            <p data-followers class="stat-num"></p>
+                        </div>
+
+                        <div class="stats following">
+                            <p class="stats-name">Following</p>
+                            <p data-following class="stat-num"></p>
+                        </div>
+
+                    </div>
+
+                    <!-- profile bottom -->
+                    <div class="profile-bottom">
+
+                        <!-- location  -->
+                        <div class="bottom-seg">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p data-location></p>
+                        </div>
+
+                        <!-- website  -->
+                        <div class="bottom-seg">
+                            <i class="fa-solid fa-link"></i>
+                            <a href="" data-website target="_blank" class="bottom-link"></a>
+                        </div>
+
+                        <!-- twitter  -->
+                        <div class="bottom-seg">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <a href="" data-twitter target="_blank" class="bottom-link"></a>
+                        </div>
+
+                        <!-- company  -->
+                        <div class="bottom-seg">
+                            <i class="fa-solid fa-building"></i>
+                            <p data-company></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/51d6554d3e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
