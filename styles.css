@@ -46,6 +46,7 @@ body.dark {
 
 .container {
     width: 55%;
+    max-width: 800px;
 }
 
 
