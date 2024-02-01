@@ -296,11 +296,12 @@ h2.dark {
 @media (max-width: 500px) {
     .container {
         width: 80%;
+        padding: 20px 0;
     }
 
-    /* .top-container {
-        margin-top: 100px;
-    } */
+    .top-container {
+        margin: 250px 0 10px 0;
+    }
 
     h1 {
         font-size: 1.3rem;
@@ -311,7 +312,7 @@ h2.dark {
     }
 
     .search-container button {
-        font-size: 15px;
+        font-size: 10px;
         padding: 0.7rem 0.7rem;
     }
 
@@ -321,11 +322,12 @@ h2.dark {
 
     [data-input] {
         transform: translateY(-2px) translateX(10px);
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .xMark {
-        transform: translateX(-1px);
+        transform: translateX(10px) translateY(-5px);
+        font-size: 10px;
     }
 
     [data-input]::placeholder {
